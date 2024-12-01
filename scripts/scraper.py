@@ -9,13 +9,17 @@ from tqdm import tqdm
 import os
 from concurrent.futures import ThreadPoolExecutor
 from dotenv import load_dotenv
+load_dotenv()
 
+CLIENT_ID = os.getenv("CLIENT_ID")
+CLIENT_SECRET = os.getenv("CLIENT_SECRET")
+USER_AGENT = os.getenv("USER_AGENT")
 class LinkedInPostScraper:
     def __init__(self):
         self.reddit = praw.Reddit(
-            client_id="hUmD_ce2Qde-k1eM9NZi0g",
-            client_secret="75uOrEH4papSqxhkbvODLcrrOEXPEA",
-            user_agent="Exciting_Bedroom6074"
+            client_id=CLIENT_ID,
+            client_secret=CLIENT_SECRET,
+            user_agent=USER_AGENT
         )
         
         os.makedirs('data/images', exist_ok=True)
