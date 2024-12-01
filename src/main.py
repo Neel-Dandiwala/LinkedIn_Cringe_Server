@@ -10,6 +10,7 @@ import logging
 import asyncio
 from concurrent.futures import ThreadPoolExecutor
 import json
+import os
 
 logging.basicConfig(
     level=logging.INFO,
@@ -109,5 +110,6 @@ async def health():
     return {"status": "healthy", "timestamp": datetime.now().isoformat()}
     
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000, workers=4, loop='uvloop')
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run(app, host="0.0.0.0", port=port, workers=4, loop='uvloop')
     
