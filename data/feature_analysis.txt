@@ -1,0 +1,47 @@
+Processed 659 posts!
+
+Feature statistics:
+           length  emoji_count  hashtag_count  exclamation_count  ...  sentiment_polarity  sentiment_subjectivity  is_extemely_positive  cringe_score
+count  659.000000   659.000000          659.0         659.000000  ...          659.000000              659.000000            659.000000    659.000000       
+mean     0.181515     0.187658            0.0           0.062491  ...            0.444590                0.467248              0.001517      0.292773       
+std      0.127935     0.162634            0.0           0.119218  ...            0.113965                0.155081              0.038954      0.163413       
+min      0.000000     0.000000            0.0           0.000000  ...            0.000000                0.000000              0.000000      0.000000       
+25%      0.086627     0.166667            0.0           0.000000  ...            0.374267                0.400000              0.000000      0.192114       
+50%      0.159518     0.166667            0.0           0.000000  ...            0.437010                0.470000              0.000000      0.276650       
+75%      0.246566     0.333333            0.0           0.090909  ...            0.507692                0.557981              0.000000      0.357998       
+max      1.000000     1.000000            0.0           1.000000  ...            1.000000                1.000000              1.000000      1.000000       
+
+[8 rows x 30 columns]
+
+Feature correlations with cringe score:
+cringe_score                1.000000
+emoji_count                 0.079483
+has_call_to_action          0.065056
+capitalized_word_count      0.029948
+contains_money_reference    0.004775
+starts_with_number          0.002241
+entity_count               -0.006785
+has_viral_pattern          -0.014312
+buzzword_ratio             -0.016724
+is_extemely_positive       -0.033001
+has_question_hook          -0.040434
+sentiment_subjectivity     -0.041081
+exclamation_count          -0.047380
+sentiment_polarity         -0.054865
+motivation_score           -0.063620
+buzzword_count             -0.064350
+self_promotion_count       -0.072328
+avg_word_length            -0.088355
+humble_brag_count          -0.103482
+question_count             -0.104197
+personal_pronouns          -0.106592
+sentence_count             -0.126044
+adjective_count            -0.165004
+noun_count                 -0.177200
+word_count                 -0.184706
+verb_count                 -0.190505
+length                     -0.193000
+hashtag_count                    NaN
+has_numerical_list               NaN
+excessive_punctuation            NaN
+Name: cringe_score, dtype: float64

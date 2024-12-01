@@ -1,0 +1,37 @@
+# Core ML dependencies
+numpy
+spacy
+#python -m spacy download en_core_web_sm
+pandas
+scikit-learn
+torch
+onnx
+onnxruntime
+skl2onnx
+lightgbm
+transformers
+tqdm
+
+
+# Reddit scraping
+praw
+requests
+tqdm
+
+
+# Image processing
+Pillow
+pytesseract
+
+
+# Text processing
+textblob
+bs4
+emoji
+nltk
+
+# Development tools
+fastapi
+uvicorn
+
+
